@@ -117,8 +117,8 @@ outs = y_train.shape[2]
 outs1 = y_train.shape[1]
 max_len, feats = X_train.shape[1], X_train.shape[2]
 hidden_l = 128
-batch_size = 128
-epochs = 110
+batch_size = 64
+epochs = 500
 
 model = Sequential()
 model.add(Masking(mask_value=0., input_shape=(max_len, feats)))
